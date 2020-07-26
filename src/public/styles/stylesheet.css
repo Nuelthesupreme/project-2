@@ -1,0 +1,107 @@
+.orange-background-colour {
+  background-color: #ff6b03;
+}
+.dark-background-colour {
+  background-color: #373a3c;
+}
+.dark-blue-background-colour {
+  background-color: #183540;
+}
+.white-background-colour {
+  background-color: #d9dbdb;
+}
+.green-background-colour {
+  background-color: #078c03;
+}
+.navy-background-colour {
+  background-color: #111930;
+}
+.red-background-colour {
+  background-color: #c20606;
+}
+.orange-border-bottom {
+  border-bottom: 0.3rem solid #ff6b03;
+}
+.orange-border {
+  border-top: 0.3rem solid #ff6b03;
+}
+.red-border-bottom {
+  border-bottom: 0.2rem solid #f20505;
+}
+.silver-border-bottom {
+  border-bottom: 0.2rem solid #edf2f4;
+}
+.nav-buttons:hover {
+  border-bottom: 0.2rem solid #f20505;
+}
+.form-border {
+  border-right: 4px solid rgba(255, 255, 255, 0.6);
+  border-left: 4px solid rgba(255, 255, 255, 0.6);
+  border-top: 4px solid rgba(255, 255, 255, 0.6);
+}
+.display-none {
+  display: none;
+}
+.card {
+  background-color: #373a3c;
+  display: block;
+}
+.center-content {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.add-to-profile {
+  background-color: #ff6b03;
+}
+.add-to-profile:hover {
+  background-color: #dd5e04;
+}
+.view-details {
+  background-color: #183540;
+}
+.view-details:hover {
+  background-color: #11242c;
+}
+.nav-items {
+  margin-top: 100%;
+}
+.nav {
+  margin-top: 120px;
+  z-index: 1;
+  margin-right: 80px;
+  padding: 5px;
+}
+.login-background {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/sekiro-background.jpg");
+}
+.signup-background {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/batman-background.jpg");
+}
+
+@media only screen and (max-width: 450px) {
+  .carousel {
+    height: 150px;
+  }
+
+  .header-picture {
+    height: 150px;
+  }
+
+  .buttons {
+    text-align: center;
+    font-size: 0.6rem;
+  }
+  .game-name {
+    text-align: center;
+  }
+  .game-card {
+    width: 100%;
+  }
+}

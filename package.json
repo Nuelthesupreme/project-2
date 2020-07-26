@@ -1,0 +1,41 @@
+{
+  "name": "user-management-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "postcss src/public/styles/tailwind.css -o src/public/styles/style.css",
+    "start": "npm run build:css && node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/surajverma2587/user-management-system.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/surajverma2587/user-management-system/issues"
+  },
+  "homepage": "https://github.com/surajverma2587/user-management-system#readme",
+  "dependencies": {
+    "autoprefixer": "^9.8.5",
+    "axios": "^0.19.2",
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.0.0",
+    "express-session": "^1.17.1",
+    "moment": "^2.27.0",
+    "mysql2": "^2.1.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "postcss-cli": "^7.1.1",
+    "sequelize": "^6.3.3",
+    "tailwindcss": "^1.4.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

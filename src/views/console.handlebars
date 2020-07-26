@@ -1,0 +1,48 @@
+{{> privateNav}}
+{{> carousel}}
+{{> modal}}
+
+
+<div class="flex flex-wrap">
+    {{#each console}}
+    <div
+        class="bg-white flex-auto sm:flex-root md:content-center md:w-1/2 lg:w-1/3 xl:w-1/3 rounded my-2 mx-2 h-auto orange-border-bottom">
+        <div class="max-w-sm w-full lg:max-w-full lg:flex ">
+            <div
+                class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden">
+                <img class="my-2" src={{image.original_url}}>
+            </div>
+            <div class="rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between
+                    leading-normal">
+                <div class="font-bold text-center text-xl px-4">{{name}}</div>
+                <p>{{deck}}</p>
+                <div class="flex flex-wrap md:flex-auto sm:flex-1">
+                    <form action="/year/{{id}}" method="POST">
+                        <input type="hidden" id="game_id" name="game_id" value={{id}}>
+                        <input type="hidden" id="game_name" name="game_name" value={{name}}>
+                        <input type="hidden" id="genre" name="genre" value={{genres}}>
+                        <button type="submit"
+                            class="add-to-profile px-6 mx-1 my-2 items-center justify-center  text-white font-bold rounded">
+                            Add to Profile
+                        </button>
+                    </form>
+                    <a class=" right-0" href={{site_detail_url}}>
+                        <button
+                            class="view-details px-6 mx-1 my-2 items-center justify-center  text-white font-bold rounded">Go
+                            to Website
+                        </button>
+                    </a>
+                    <a class=" right-0" href="/game/{{id}}">
+                        <button
+                            class="view-details px-6 mx-1 my-2 items-center justify-center  text-white font-bold rounded">View
+                            all Games
+                        </button>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
+{{> footer }}
