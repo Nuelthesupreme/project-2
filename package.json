@@ -21,7 +21,7 @@
   "homepage": "https://github.com/surajverma2587/user-management-system#readme",
   "dependencies": {
     "autoprefixer": "^9.8.5",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
     "express-handlebars": "^5.0.0",
